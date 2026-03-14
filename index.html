@@ -268,6 +268,71 @@ main{
   transition: .4s;
 }
 
+/* ===== Learning Project Card ===== */
+.service-card {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background: #0b1220;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid #ffff00;
+  box-shadow: 0 0 25px #ffff00;
+  transition: 0.4s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 50px #ffff00;
+  transform: translateY(-8px);
+}
+
+.service-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.service-card .project-btn {
+  background: transparent;
+  border: 2px solid #ffff00;
+  color: #ffff00;
+  margin: 8px;
+}
+
+.service-card .project-btn:hover {
+  background: #ffff00;
+  color: rgb(10, 0, 0);
+}
+.service-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #f4f403;
+  box-shadow: 0 0 25px #ffff00;
+  padding: 0;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 50px #ebfc02;
+  transform: translateY(-8px);
+  transition: .4s;
+}
+
 
 
 /* ===== lang===*/
@@ -291,6 +356,27 @@ html[dir="rtl"] .menu {
 html[dir="rtl"] .cta {
   flex-direction: row-reverse;
 }
+/* ─── NUMBER BADGES ─── */
+    .member-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent2);
+      letter-spacing: .04em;
+      margin-bottom: 12px;
+    }
+
+    .member-badge span {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: rgba(59,130,246,.15);
+      border: 1px solid rgba(59,130,246,.3);
+      display: grid;
+      place-items: center;
+      font-size: 11px;
+    }
 
     /* Toggle animation */
     #menu-toggle:checked + .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
@@ -328,7 +414,7 @@ html[dir="rtl"] .cta {
 }
       /* Show menu when checkbox is checked */
       #menu-toggle:checked + .hamburger + .menu { display: flex; }
-    }
+    
 
     .hero{padding:72px 0 28px}
     .hero-inner{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}
@@ -410,6 +496,7 @@ html[dir="rtl"] .cta {
       <a href="#about">About Us</a>
       <a href="#project">Our Project</a>
       <a href="#learning">Learning</a>
+      <a href="#ourservice">Our Service</a>
       <a href="#contact">Contact Us</a>
     </nav>
 
@@ -477,6 +564,7 @@ html[dir="rtl"] .cta {
           <img src="hama.png" 
                alt="Mohammed Barzan" 
                class="profile-img">
+               <div class="member-badge"><span>01</span> Founder & Leader</div>
           <h3>👑 • Mohammed Barzan</h3>
           <p data-i18n="Mabout">Founder and Team Leader، Mohammad Barzan is a student in the IT department and a project initiator who is an expert in the field of website building، design، and programming، in a fully advanced and standardized manner.</p>
           <a class="btn primary" href="https://mba.amzgroup.xyz"data-i18n="moreinfo">More Info</a>
@@ -486,6 +574,7 @@ html[dir="rtl"] .cta {
           <img src="zhalla.png" 
                alt="Zhalla Karwan" 
                class="profile-img">
+               <div class="member-badge"><span>02</span>Team Manager</div>
           <h3>🎖️Zhalla Karwan</h3>
           <p data-i18n="Zabout">The team manager، Zhalla Karwan، a student of the IT department، the recipient and initiator، and the organization and conceptualization of projects before they start، has extensive experience in programming and website management.</p>
         <a class="btn primary" href="https://zhalla.amzgroup.xyz"data-i18n="moreinfo">More Info</a>
@@ -495,6 +584,7 @@ html[dir="rtl"] .cta {
           <img src="anas.png" 
                alt="Anas Mohsin" 
                class="profile-img">
+               <div class="member-badge"><span>03</span>Team Manager</div>
           <h3>🎖️Anas Mohsin</h3>
           <p data-i18n="Aabout">The Team Project Manager، Anas Mohsen، a student in the IT department، is the one who brainstorms the projects and leads the team when any problem arises and is ready to solve it in a professional manner, and supports the team.</p>
         </div>
@@ -631,6 +721,37 @@ upload speed, and ping in real-time, helping users monitor their internet perfor
 </p>
     <div class="btn-group">
       <a href="https://youtube.com/playlist?list=PL2LkRaW_Ncv7ZQYsR1A_bJCImIKUgOMoH&si=NQhGdDBNV_UzeWc6" target="_blank" class="project-btn">Click</a>
+    </div>
+  </div>
+</div>
+</section>
+<!--OUR SERVICE-->
+<section id="ourservice" class="reveal">
+  <div class="container grid">
+
+    <div class="feature service-card">
+  
+  <img src="IMG_3083.png" class="none">
+
+  <div class="card-content">
+    
+    </div>
+    <h2>RESTAURANT MENU</h2>
+    <p data-i18n="restmenu">This website is designed to display restaurant menus in a simple and attractive way. Users can easily browse food items, check prices, and view detailed information about each dish. The design is modern and fully responsive, making it suitable for both mobile and desktop use. The goal of this website is to improve customer experience and make food selection faster and more convenient.</p>
+
+    <div class="btn-group">
+      <a href="" target="_blank" class="project-btn">🔒Private Project</a>
+    </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="feature service-card">
+  <img src="IMG_3082.png" class="none">
+  <div class="card-content">
+    </div>
+    <h2>SHOPPING WEBSITE</h2>
+    <p data-i18n="shoppingweb">This website is an online platform designed to help sellers showcase and sell their products easily and professionally. Sellers can add products, set prices, upload images, and manage customer orders efficiently. The website features a modern, fast, and fully responsive design that works smoothly on both mobile devices and desktops. Its main goal is to increase sales and improve the overall buying and selling experience.</p>
+    <div class="btn-group">
+      <a href="" target="_blank" class="project-btn">🔒Private Project</a>
     </div>
   </div>
 </div>
@@ -776,7 +897,9 @@ conAbout:"گەر دەتەوێت زانیاری زیاتر یاخود پەیوە�
 moreinfo:"زانیاری زیاتر",
 amzyoutube:"ئێمە لێرە ئامەدەی بۆ پێدانی زانست و زانیاریە گشتیەکانی دیڤلۆپەری بە پرزانیاری و باشترین راهێنەر، تۆ دەتوانیت داهاتوی خۆت لەلای ئێمە بنیات بنێیت.",
 rezhna:"لێرە دا دەتوانیت فێری بابەتەکانی بیرکاری ببیت کە پەیوەندیان بە زانستەکانی دیڤلۆپەریەوە هەیە ",
-weather:"ویبسایتی Kurdistan Weather ویبسایتێکە بۆ پیشاندانی کەش و هەوای شارەکانی کوردستان. لەم ویبسایتەدا بەکارهێنەر دەتوانێت زانیاری وەک پلەی گەرمی، دۆخی کەش و هەوا و زانیارییەکانی تر ببینێت. ویبسایتەکە بە زمانی کوردی دروستکراوە و دیزاینێکی سادە و خێرا هەیە بۆ ئەوەی بەکارهێنانی بۆ هەموو کەس ئاسان بێت"
+weather:"ویبسایتی Kurdistan Weather ویبسایتێکە بۆ پیشاندانی کەش و هەوای شارەکانی کوردستان. لەم ویبسایتەدا بەکارهێنەر دەتوانێت زانیاری وەک پلەی گەرمی، دۆخی کەش و هەوا و زانیارییەکانی تر ببینێت. ویبسایتەکە بە زمانی کوردی دروستکراوە و دیزاینێکی سادە و خێرا هەیە بۆ ئەوەی بەکارهێنانی بۆ هەموو کەس ئاسان بێت",
+restmenu:"ئەم ویبسایتە بۆ پیشاندانی مێنیوی خواردنگەکان بە شێوەیەکی ئاسان و جوان دروستکراوە. بەکارهێنەران دەتوانن بە ئاسانی خواردنەکان ببینن، نرخەکان بزانن و زانیاری زیاتر دەربارەی هەر خواردنێک وەرگرن. دیزاینەکە مۆدێرن و گونجاوە بۆ بەکارهێنان لەسەر مۆبایل و کۆمپیوتەر. ئامانجی ئەم ویبسایتە باشترکردنی ئەزموونی کڕیار و خێراترکردنی هەڵبژاردنی خواردنە.",
+shoppingweb:"ئەم ویبسایتە پلاتفۆرمێکی ئۆنلاینە بۆ یارمەتیدانی فرۆشیارەکان بۆ پیشاندانی بەرهەمەکان و فرۆشتنیان بە شێوەیەکی ئاسان و پرۆفیشنال. فرۆشیارەکان دەتوانن بەرهەمەکان زیاد بکەن، نرخ و وێنە دابنێن و داواکاریی کڕیاران بەڕێوە ببرن. دیزاینەکە مۆدێرن و خێراکارە و گونجاوە بۆ مۆبایل و کۆمپیوتەر. ئامانجی ئەم ویبسایتە زیادکردنی فرۆش و باشترکردنی ئەزموونی کڕین و فرۆشتنە."
 
 }
 
@@ -825,13 +948,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 
 </html>
-
-
-
-
-
-
-
-
-
-
